@@ -4,5 +4,5 @@
     box-sizing: border-box;
     vertical-align: baseline;
     list-style: none;
-    transition: all .5s;
+    transition: all .5s ease;
 }

@@ -1,17 +1,26 @@
 let stage = {
     references: {
         logo_img: document.getElementById('brand_logo'),
+        toggleThemeIcon: document.getElementById('toggleTheme'),
+        root: document.documentElement,
     },
 };
 
 
 
 function toggleTheme(){
-    document.body.classList.toggle('lightmode');
+    let currTheme = stage.references.root.getAttribute('data-theme');
 
-    if (document.body.classList.contains("lightmode")){
-        stage.references.logo_img.src = 'assets/images/logo/logo.png';
+    if (currTheme === "lightmode"){
+        stage.references.root.setAttribute('data-theme', 'darkmode')
+
+        stage.references.toggleThemeIcon.classList.remove('bi-sun');
+        stage.references.toggleThemeIcon.classList.add('bi-moon-stars');
+
     }else {
-        stage.references.logo_img.src = 'assets/images/logo/white-logo.png';
+        stage.references.root.setAttribute('data-theme', 'lightmode')
+
+        stage.references.toggleThemeIcon.classList.remove('bi-moon-stars');
+        stage.references.toggleThemeIcon.classList.add('bi-sun');
     }
 }

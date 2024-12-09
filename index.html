@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="darkmode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,42 @@
     <link rel="shortcut icon" href="./assets/images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <!--Parou em sessões principal e habilidades-->
 </head>
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                        <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header__brand">
             <img class="brand__logo" id="brand_logo" src="assets/images/logo/white-logo.png" alt="Logo">
         </div>
-        <i class="bi bi-sun" id="toggleTheme" onclick="toggleTheme()"></i>
+        <div class="header__toggle">
+            <i class="bi bi-sun" id="toggleTheme" onclick="toggleTheme()"></i>
+        </div>
     </header>
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
