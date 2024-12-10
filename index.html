@@ -21,17 +21,17 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#projetos">
+                    <a class="menu__link" href="#projects">
                         <span class="menu__text">Projetos</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#sobre">
+                    <a class="menu__link" href="#about">
                         <span class="menu__text">Sobre</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#contato">
+                    <a class="menu__link" href="#contact">
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
@@ -53,26 +53,26 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#projetos">
+                <a class="menu__link" href="#projects">
                     <i class="menu__icon bi bi-window-stack"></i>
                     <span class="menu__text">Projetos</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#sobre">
+                <a class="menu__link" href="#about">
                     <i class="menu__icon bi bi-person"></i>
                     <span class="menu__text">Sobre</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#contato">
+                <a class="menu__link" href="#contact">
                     <i class="menu__icon bi bi-envelope"></i>
                     <span class="menu__text">Contato</span>
                 </a>
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="home">
         <div class="main__content1">
             <h1><b>Soluções e Desenvolvimento</b> Front e Backend</h1>
             <p>Caio Cunha, Jundiaí-SP, Desenvolvedor Front e Backend</p>
@@ -89,11 +89,12 @@
                     </a>
                 </li>
             </ul>
-
-            <button class="btn btn--primary">
-                <span>Ver Projetos</span>
-                <i class="bi bi-arrow-down-right"></i>
-            </button>
+            <a href="#projects">
+                <button class="btn btn--primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
         </div>
 
         <div class="main__content2">
@@ -118,6 +119,209 @@
             </li>
         </ul>     
     </section>
+
+    <section id="projects" class="projects">
+        <h2>Projetos</h2>
+        <div class="projects__container">
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projects/FutureBet.png" alt="FutureBet Screen">
+                <div class="card__body">
+                    <h3 class="card__title">FutureBet</h3>
+                    <p class="card__description">Site de Apostas Simulado</p>
+                    <ul class="card__list">
+                        <li class="card__item">Aposta e criação de eventos;</li>
+                        <li class="card__item">Emails automatizados;</li>
+                        <li class="card__item">Carteira simulada;</li>
+                        <li class="card__item">Histórico de transações;</li>
+                        <li class="card__item">pesquisa com filtros.</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/typescript.png" alt="typescript Logo">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/sql.png" alt="Oracle SQL Logo">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/Bootstrap_logo.png" alt="Bootstrap Logo">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/nodemailer_logo.png" alt="Nodemailer Logo">
+                        </li>
+                    </ul> 
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Repositório</span>
+                        </button>
+                    </div> 
+                </div>   
+            </div>
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projects/spiderman.png" alt="Spiderman Carrosel">
+                <div class="card__body">
+                    <h3 class="card__title">Carrosel Homem-Aranha</h3>
+                    <p class="card__description">Site com descrição de todos os filmes do homem-aranha</p>
+                    <ul class="card__list">
+                        <li class="card__item">Menu com animação carrosel;</li>
+                        <li class="card__item">interface interariva e responsiva</li>
+                        <li class="card__item">Animações trabalhadas;</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/HTML5_logo.png" alt="HTML Logo">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/CSS3_logo.png" alt="CSS Logo">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/JavaScript-logo.png" alt="JavaScript Logo">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/technologies/Bootstrap_logo.png" alt="Bootstrap Logo">
+                        </li>
+                    </ul> 
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Repositório</span>
+                        </button>
+                    </div> 
+                </div>   
+            </div>
+            <a href="https://github.com/caiodscunha" target="_blank">
+                <button class="btn btn--primary">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+        
+    </section>
+
+    <section id="about" class="about">
+        <div class="about__content1">
+            <img class="about__photo" src="assets/images/avatar/avatar.jpg" alt="">
+            <div class="about__description">
+                <h2>Sobre mim</h2>
+                <p>Caio Cunha. Estudante de Engenharia de Software, com foco em desenvolvimento de sistemas eficientes e 
+                    utilização de metodologias ágeis. Tenho interesse em resolver problemas reais por meio da tecnologia, 
+                    com uma base sólida em programação e boas práticas de desenvolvimento. Busco constantemente aprimorar 
+                    minhas habilidades técnicas.
+                </p>  
+                <div class="about__icons">
+                    <i class="bi bi-translate"></i>
+                    <span>Inglês: Intermediário</span>
+                </div>
+                <div class="description__buttons">
+                    <a href="https://www.linkedin.com/in/caio-dos-santos-cunha-697665329/" target="_blank">
+                        <button class="btn btn--primary">
+                        <span>Conecte-se Comigo</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                        </button> 
+                    </a>
+                    <a href="#blank">
+                        <button class="btn">
+                        <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about__content2">
+            <div class="col1">
+                <div class="row1">
+                    <h3>Formação</h3>
+                    <h4>Bacharelado em Engenharia de Software</h4>
+                    <span>Jan 2024 - Atualmente</span>
+                    <div class="about__icons">
+                        <i class="bi bi-bank"></i>
+                        <span>Pontíficia Universidade Católica de Campinas</span>
+                    </div>
+                </div>
+                <div class="row2">
+                    <!--
+                    <h3>Experiências</h3>
+                    <h4>Cargo</h4>
+                    <span>Empresa. inicio - fim</span>
+                    <span>resumo
+                    </span>
+                    <ul class="about__list">
+                        <li class="about__item">abilidade desenvolvida;</li>
+                    </ul>
+                    -->
+                </div>  
+            </div>
+        
+            <div class="col2">
+                <h3>Cursos</h3>
+                <div id="accordion">
+                    <div class="accordion__item active">
+                        <button class="accordion__header start" onclick="toggleActiveAccordion(this)">
+                            <span>Ri Happy - Front-end do Zero</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>
+                                Digital Innovation One. Dez 2024. 75h.
+                            </p>
+                            <p>
+                                Este curso prático é focado em dominar as bases do desenvolvimento Front-End, utilizando HTML, CSS e 
+                                JavaScript. Com uma abordagem estruturada e dinâmica, inclui a criação de 10 projetos completos que vão 
+                                desde páginas web responsivas até aplicações interativas com temáticas populares como Stranger Things, 
+                                Spider-Man e Yu-Gi-Oh.
+
+                                Além disso, o conteúdo é alinhado às demandas reais do mercado, sendo conduzido por mentores 
+                                especializados. Ideal para desenvolvedores que desejam fortalecer seu portfólio e se destacar em 
+                                processos seletivos ao redor do mundo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header end" onclick="toggleActiveAccordion(this)">
+                            <span>Scrum no Contexto do Serviço Público</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body end">
+                            <p>
+                                Escola Nacional de Administração Pública. Junho 2024. 15h.
+                            </p>
+                            <p>
+                                implementação de práticas ágeis para aumentar a eficiência, promover a colaboração entre equipes e 
+                                entregar valor de forma contínua e incremental. Busca inovar e otimizar
+                                processos no serviço público por meio de métodos ágeis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para serviços e novas conexões. Contate-me via 
+          e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
+        <ul class="menu menu--social">
+            <li>
+                <a class="menu__link" href="https://github.com/caiodscunha" target="_blank">
+                <i class="menu__icon bi bi-github"></i>
+                <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__link" href="https://www.linkedin.com/in/caio-dos-santos-cunha-697665329/" target="_blank">
+                <i class="menu__icon bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+        <a href="mailto:caio17.sc@outlook.com">
+            <button class="btn btn--primary">
+                <span class="email">caio17.sc@outlook.com</span>
+            </button>  
+        </a>
+    </section>
+    
 
     <footer>
         <p>2024</p>

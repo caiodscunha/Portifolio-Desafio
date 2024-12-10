@@ -3,6 +3,7 @@ let stage = {
         logo_img: document.getElementById('brand_logo'),
         toggleThemeIcon: document.getElementById('toggleTheme'),
         root: document.documentElement,
+        menuLinks: document.querySelectorAll('.menu__link'),
     },
 };
 
@@ -24,3 +25,15 @@ function toggleTheme(){
         stage.references.toggleThemeIcon.classList.add('bi-sun');
     }
 }
+
+function toggleActiveAccordion(button){
+    const accordionItem = button.parentElement;
+    accordionItem.classList.toggle('active');
+}
+
+stage.references.menuLinks.forEach(item => {
+    item.addEventListener("click", () => {
+        stage.references.menuLinks.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+    });
+});
