@@ -1,4 +1,5 @@
 let stage = {
+    theme: localStorage.getItem('theme'),
     references: {
         logo_img: document.getElementById('brand_logo'),
         toggleThemeIcon: document.getElementById('toggleTheme'),
@@ -7,20 +8,20 @@ let stage = {
     },
 };
 
-
+stage.references.root.setAttribute('data-theme', stage.theme);
 
 function toggleTheme(){
     let currTheme = stage.references.root.getAttribute('data-theme');
 
     if (currTheme === "lightmode"){
         stage.references.root.setAttribute('data-theme', 'darkmode')
-
+        localStorage.setItem('theme', 'darkmode');
         stage.references.toggleThemeIcon.classList.remove('bi-sun');
         stage.references.toggleThemeIcon.classList.add('bi-moon-stars');
 
     }else {
         stage.references.root.setAttribute('data-theme', 'lightmode')
-
+        localStorage.setItem('theme', 'lightmode');
         stage.references.toggleThemeIcon.classList.remove('bi-moon-stars');
         stage.references.toggleThemeIcon.classList.add('bi-sun');
     }
